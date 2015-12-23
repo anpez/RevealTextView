@@ -1,5 +1,10 @@
 apply plugin: 'com.android.application'
 
+repositories {
+  maven {
+    url 'https://dl.bintray.com/anpez/maven/'
+  }
+}
 android {
   compileSdkVersion 23
   buildToolsVersion "23.0.2"
@@ -23,5 +28,5 @@ dependencies {
   compile fileTree(include: ['*.jar'], dir: 'libs')
   testCompile 'junit:junit:4.12'
   compile 'com.android.support:appcompat-v7:23.1.1'
-  compile project(':revealtextview')
+  compile 'com.antonionicolaspina.revealtextview:revealtextview:0.1'
 }

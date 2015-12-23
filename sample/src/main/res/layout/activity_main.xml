@@ -12,7 +12,7 @@
     <com.antonionicolaspina.revealtextview.RevealTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="48sp"
+        android:textSize="32sp"
         app:duration="2000"
-        app:text="Hello World!"/>
+        app:text="Hello Reveal Text!"/>
 </RelativeLayout>
