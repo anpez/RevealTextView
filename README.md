@@ -3,6 +3,8 @@ A TextView subclass to show a reveal effect
 
 [ ![Download](https://api.bintray.com/packages/anpez/maven/revealtextview/images/download.svg) ](https://bintray.com/anpez/maven/revealtextview/_latestVersion)
 
+[ ![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-RevealTextView-green.svg?style=true)](https://android-arsenal.com/details/1/2952)
+
 ![Snapshot](https://raw.githubusercontent.com/ANPez/RevealTextView/master/snapshot.gif)
 
 ## Requirements
