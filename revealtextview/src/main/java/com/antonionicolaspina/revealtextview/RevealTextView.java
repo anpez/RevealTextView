@@ -49,20 +49,7 @@ public final class RevealTextView extends TextView implements Runnable, ValueAni
       attrs.recycle();
     }
 
-    alphas = new double[text.length()];
-    for(int i=0; i<text.length(); i++) {
-      alphas[i] = Math.random() - 1.0f;
-    }
-
-    redraw();
-  }
-
-  protected void redraw() {
-    setText(text);
-
-    if (null != text) {
-      post(this);
-    }
+    setAnimatedText(text);
   }
 
   @Override
@@ -92,5 +79,34 @@ public final class RevealTextView extends TextView implements Runnable, ValueAni
       builder.setSpan(new ForegroundColorSpan(Color.argb(clamp(value + alphas[i]), red, green, blue)), i, i+1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
     }
     setText(builder);
+  }
+
+  /**************
+   *** Public ***
+   **************/
+
+  /**
+   * Replay the animation.
+   */
+  public void replayAnimation() {
+    if (null != text) {
+      post(this);
+    }
+  }
+
+  /**
+   * Change the text and replay the animation.
+   * @param text Text to be shown.
+   */
+  public void setAnimatedText(String text) {
+    this.text = text;
+    alphas    = new double[text.length()];
+    for(int i=0; i<text.length(); i++) {
+      alphas[i] = Math.random() - 1.0f;
+    }
+
+    setText(text);
+
+    replayAnimation();
   }
 }
