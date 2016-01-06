@@ -15,7 +15,7 @@ Android 4.0, API 14
 
 ```groovy
 dependencies {
-  compile 'com.antonionicolaspina.revealtextview:revealtextview:0.1'
+  compile 'com.antonionicolaspina.revealtextview:revealtextview:1.0'
 }
 ```
 
