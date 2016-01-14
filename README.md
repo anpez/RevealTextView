@@ -15,7 +15,7 @@ Android 4.0, API 14
 
 ```groovy
 dependencies {
-  compile 'com.antonionicolaspina.revealtextview:revealtextview:1.0'
+  compile 'com.antonionicolaspina.revealtextview:revealtextview:2.0'
 }
 ```
 
@@ -25,12 +25,12 @@ dependencies {
 <com.antonionicolaspina.revealtextview.RevealTextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    app:duration="2000"
-    app:text="Hello Reveal Text!"/>
+    app:rtv_duration="2000"
+    android:text="Hello Reveal Text!"/>
 ```
 
 ## License
-    Copyright 2015 Antonio Nicolás Pina
+    Copyright 2016 Antonio Nicolás Pina
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

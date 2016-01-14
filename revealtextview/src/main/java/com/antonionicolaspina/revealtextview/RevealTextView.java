@@ -43,8 +43,8 @@ public final class RevealTextView extends TextView implements Runnable, ValueAni
 
   protected void init(TypedArray attrs) {
     try {
-      animationDuration = attrs.getInteger(R.styleable.RevealTextView_duration, animationDuration);
-      text = attrs.getString(R.styleable.RevealTextView_text);
+      animationDuration = attrs.getInteger(R.styleable.RevealTextView_rtv_duration, animationDuration);
+      text = attrs.getString(R.styleable.RevealTextView_android_text);
     } finally {
       attrs.recycle();
     }
